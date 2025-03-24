@@ -1,0 +1,8 @@
+Select*
+From dbo.[Nashville Housing Data]
+
+Alter Table dbo.[Nashville Housing Data]
+Drop Column OwnerAddress, TaxDistrict, PropertyAddress
+
+Alter Table dbo.[Nashville Housing Data]
+Drop Column SaleDate
