@@ -1,0 +1,16 @@
+Select Distinct(SoldAsVacant),COUNT(SoldAsVacant)
+From dbo.[Nashville Housing Data]
+group by SoldAsVacant
+Order by 2
+
+Select SoldAsVacant
+,CASE WHEN SoldAsVacant = 'Y' THEN 'Yes'
+      WHEN SoldAsVacant = 'N' THEN 'No'
+	  ELSE SoldAsVacant
+	  END
+From dbo.[Nashville Housing Data]
+
+Update dbo.[Nashville Housing Data]
+set SoldAsVacant = CASE WHEN SoldAsVacant = 'Y' THEN 'Yes'
+      WHEN SoldAsVacant = 'N' THEN 'No'
+	  ELSE SoldAsVacant
