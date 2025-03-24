@@ -1,0 +1,16 @@
+WITH RowNumCTE as(
+Select *,
+	ROW_NUMBER() Over (
+	Partition by ParcelId,
+	PropertyAddress,
+	SaleDate,
+	SalePrice,
+	LegalReference
+	Order by
+	UniqueId) as row_num
+from dbo.[Nashville Housing Data]
+--order by ParcelId
+)
+Select *
+from RowNumCTE 
+Where row_num > 1
