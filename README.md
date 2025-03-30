@@ -21,6 +21,25 @@ Data Types: Various( Integer, String, date..)
 
 Data Cleaning: Identifying and correcting errors, inconsistencies and missing values in the dataset
 
+### Data Cleaning Proess
+
+The following steps were taken to clean the data
+
+Breakout_address_into_individual_columns.sql
+
+Change_Y_and_N_to_Yes_and_No_in_Sold_as_Vacant.sql
+
+Delete_unused_column.sql
+
+Populate_Property_address.sql
+
+Remove_duplicate.sql
+
+Standardizing_date_format.sql
+
+
+
+
 
 
 	  
