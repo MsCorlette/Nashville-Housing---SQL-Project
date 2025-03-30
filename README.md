@@ -31,7 +31,7 @@ The following steps were taken to clean the data
 
 3. https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Standardizing%20date%20format
 
-4. 
+4. https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Populate%20Property%20Address%20data
 
 
 
