@@ -25,17 +25,31 @@ Data Cleaning: Identifying and correcting errors, inconsistencies and missing va
 
 The following steps were taken to clean the data
 
-1.https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Breakout%20address%20into%20individual%20columns(%20city%2C%20state%2Caddress)
+1.Breakout address into individual columns(city,state,address)
 
-2. https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Change%20Y%20and%20N%20to%20Yes%20and%20No%20in%20%22Sold%20as%20Vacant%22%20field
+https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Breakout%20address%20into%20individual%20columns(%20city%2C%20state%2Caddress)
 
-3. https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Standardizing%20date%20format
+2. Changed Y and N to Yes and No in "Sold as Vacant" field
 
-4. https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Populate%20Property%20Address%20data
+https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Change%20Y%20and%20N%20to%20Yes%20and%20No%20in%20%22Sold%20as%20Vacant%22%20field
 
-5. https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Remove%20Duplicates
+3. Standardized date format
+  
+ https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Standardizing%20date%20format
 
-6. 
+4. Populate Property Address
+  
+https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Populate%20Property%20Address%20data
+
+5. Removed duplicates
+
+https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Remove%20Duplicates
+
+6. Deleted Unused Columns
+
+ https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Delete%20Unused%20Columns
+
+
 
 
 
