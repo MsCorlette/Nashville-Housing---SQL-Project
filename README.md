@@ -29,7 +29,9 @@ The following steps were taken to clean the data
 
 2. https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Change%20Y%20and%20N%20to%20Yes%20and%20No%20in%20%22Sold%20as%20Vacant%22%20field
 
-3. 
+3. https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Standardizing%20date%20format
+
+4. 
 
 
 
