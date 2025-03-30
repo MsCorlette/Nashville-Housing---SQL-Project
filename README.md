@@ -25,18 +25,9 @@ Data Cleaning: Identifying and correcting errors, inconsistencies and missing va
 
 The following steps were taken to clean the data
 
-Breakout_address_into_individual_columns.sql
+1.https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Breakout%20address%20into%20individual%20columns(%20city%2C%20state%2Caddress)
 
-Change_Y_and_N_to_Yes_and_No_in_Sold_as_Vacant.sql
-
-Delete_unused_column.sql
-
-Populate_Property_address.sql
-
-Remove_duplicate.sql
-
-Standardizing_date_format.sql
-
+2. 
 
 
 
