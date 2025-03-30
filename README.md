@@ -33,6 +33,10 @@ The following steps were taken to clean the data
 
 4. https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Populate%20Property%20Address%20data
 
+5. https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Remove%20Duplicates
+
+6. 
+
 
 
 
