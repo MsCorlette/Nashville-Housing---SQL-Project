@@ -1,8 +1,8 @@
-Select*
-From dbo.[Nashville Housing Data]
+SELECT*
+FROM dbo.[Nashville Housing Data]
 
-Alter Table dbo.[Nashville Housing Data]
-Drop Column OwnerAddress, TaxDistrict, PropertyAddress
+ALTER TABLE dbo.[Nashville Housing Data]
+DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress
 
-Alter Table dbo.[Nashville Housing Data]
-Drop Column SaleDate
+ALTER TABLE dbo.[Nashville Housing Data]
+DROP COLUMN SaleDate
