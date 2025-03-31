@@ -1,3 +1,5 @@
+#### Breakout address into individual columns(state,city,address)
+
 SELECT PropertyAddress
 FROM dbo.[Nashville Housing Data]
 
