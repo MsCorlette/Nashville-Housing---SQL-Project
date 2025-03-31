@@ -1,3 +1,5 @@
+#### Change Y and N to Yes and No in "Sold as vacant" field
+
 SELECT DISTINCT(SoldAsVacant),COUNT(SoldAsVacant)
 FROM dbo.[Nashville Housing Data]
 GROUP BY by SoldAsVacant
