@@ -1,53 +1,52 @@
-select PropertyAddress
-from dbo.[Nashville Housing Data]
+SELECT PropertyAddress
+FROM dbo.[Nashville Housing Data]
 
-Select
+SELECT
 SUBSTRING(PropertyAddress, 1, CHARINDEX(',',PropertyAddress)-1) as Address
 ,SUBSTRING(PropertyAddress,CHARINDEX(',',PropertyAddress)+1,LEN(PropertyAddress)) as Address
-from dbo.[Nashville Housing Data]
+FROM dbo.[Nashville Housing Data]
 
 
-Alter table dbo.[Nashville Housing Data]
-Add PropertySplitAddress NVarchar(255)
+ALTER TABLE dbo.[Nashville Housing Data]
+ADD PropertySplitAddress NVarchar(255)
 
-Update dbo.[Nashville Housing Data]
-Set PropertySplitAddress = SUBSTRING(PropertyAddress, 1, CHARINDEX(',',PropertyAddress)-1) 
+UPDATE dbo.[Nashville Housing Data]
+SET PropertySplitAddress = SUBSTRING(PropertyAddress, 1, CHARINDEX(',',PropertyAddress)-1) 
 
-Alter table dbo.[Nashville Housing Data]
-Add PropertySplitCity NVarchar(255)
+ALTER TABLE dbo.[Nashville Housing Data]
+ADD PropertySplitCity NVarchar(255)
 
-Update dbo.[Nashville Housing Data]
-Set PropertySplitCity = SUBSTRING(PropertyAddress,CHARINDEX(',',PropertyAddress)+1,LEN(PropertyAddress))
-
-
-Select OwnerAddress
-From dbo.[Nashville Housing Data]
+UPDATE dbo.[Nashville Housing Data]
+SET PropertySplitCity = SUBSTRING(PropertyAddress,CHARINDEX(',',PropertyAddress)+1,LEN(PropertyAddress))
 
 
-Select 
+SELECT OwnerAddress
+FROM dbo.[Nashville Housing Data]
+
+
+SELECT 
 PARSENAME(replace(OwnerAddress, ',', '.'), 3)
 ,PARSENAME(replace(OwnerAddress, ',', '.'), 2)
 ,PARSENAME(replace(OwnerAddress, ',', '.'), 1)
 From dbo.[Nashville Housing Data]
 
 
-Alter table dbo.[Nashville Housing Data]
-Add OwnerSplitAddress NVarchar(255)
+ALTER TABLE dbo.[Nashville Housing Data]
+ADD OwnerSplitAddress NVarchar(255)
 
-Update dbo.[Nashville Housing Data]
-Set OwnerSplitAddress = PARSENAME(replace(OwnerAddress, ',', '.'), 3)
+UPDATE dbo.[Nashville Housing Data]
+SET OwnerSplitAddress = PARSENAME(replace(OwnerAddress, ',', '.'), 3)
 
-Alter table dbo.[Nashville Housing Data]
-Add OwnerSplitCity NVarchar(255)
+ALTER TABLE dbo.[Nashville Housing Data]
+ADD OwnerSplitCity NVarchar(255)
 
-Update dbo.[Nashville Housing Data]
-Set OwnerSplitCity = PARSENAME(replace(OwnerAddress, ',', '.'), 2)
+UPDATE dbo.[Nashville Housing Data]
+SET OwnerSplitCity = PARSENAME(replace(OwnerAddress, ',', '.'), 2)
 
-Alter table dbo.[Nashville Housing Data]
-Add OwnerSplitState NVarchar(255)
+ALTER TABLE dbo.[Nashville Housing Data]
+ADD OwnerSplitState NVarchar(255)
 
-Update dbo.[Nashville Housing Data]
-Set OwnerSplitCity = PARSENAME(replace(OwnerAddress, ',', '.'), 1)
+UPDATE dbo.[Nashville Housing Data]
+SET OwnerSplitCity = PARSENAME(replace(OwnerAddress, ',', '.'), 1)
 
-Select*
-From dbo.[Nashville Housing Data]
+
