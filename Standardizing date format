@@ -1,11 +1,13 @@
-select SaleDateConverted, Convert(Date,SaleDate)
-from dbo.[Nashville Housing Data]
+#### Standardizing date format
 
-Update dbo.[Nashville Housing Data]
-Set SaleDate = Convert(Date,SaleDate)
+SELECT SaleDateConverted, Convert(Date,SaleDate)
+FROM dbo.[Nashville Housing Data]
 
-Alter table dbo.[Nashville Housing Data]
-Add SaleDateConverted Date;
+UPDATE dbo.[Nashville Housing Data]
+SET SaleDate = Convert(Date,SaleDate)
 
-Update dbo.[Nashville Housing Data]
-Set SaleDateConverted  = Convert(Date,SaleDate) 
+ALTER TABLE dbo.[Nashville Housing Data]
+ADD SaleDateConverted Date;
+
+UPDATE dbo.[Nashville Housing Data]
+SET SaleDateConverted  = Convert(Date,SaleDate) 
