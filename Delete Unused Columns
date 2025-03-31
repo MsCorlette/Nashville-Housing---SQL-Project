@@ -1,3 +1,5 @@
+#### Delete Unused Columns
+
 SELECT*
 FROM dbo.[Nashville Housing Data]
 
