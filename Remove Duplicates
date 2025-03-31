@@ -1,3 +1,5 @@
+#### Remove Duplicates
+
 WITH RowNumCTE as(
 Select *,
 	ROW_NUMBER() Over (
@@ -8,9 +10,9 @@ Select *,
 	LegalReference
 	Order by
 	UniqueId) as row_num
-from dbo.[Nashville Housing Data]
+FROM dbo.[Nashville Housing Data]
 --order by ParcelId
 )
-Select *
-from RowNumCTE 
-Where row_num > 1
+SELECT *
+FROM RowNumCTE 
+WHERE row_num > 1
