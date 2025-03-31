@@ -49,6 +49,9 @@ https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Remove%2
 
  https://github.com/MsCorlette/Nashville-Housing---SQL-Project/blob/main/Delete%20Unused%20Columns
 
+### Conclusion
+
+This data Cleaning project involved standrdizing the date format, removing duplicates and populating property addresses. By following these steps, we were able to improve the quality and accuracy of the data, making it more suitable for analysis and modeling.
 
 
 
